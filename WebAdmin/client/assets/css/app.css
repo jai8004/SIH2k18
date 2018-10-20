@@ -1,0 +1,36 @@
+
+@media screen and (min-width: 0px) and (max-width: 991px) {
+  .sideBarContent { display: block !important; }  /* show it on small screens */
+}
+@media screen and (min-width: 992px){
+  .sideBarContent { display: none !important; }   /* hide it elsewhere */
+}
+
+.thumb {
+    width: 24px;
+    height: 24px;
+    float: none;
+    position: relative;
+    top: 7px;
+}
+
+form .progress {
+    line-height: 15px;
+}
+}
+
+.progress {
+    display: inline-block;
+    width: 100px;
+    border: 3px groove #CCC;
+}
+
+.progress div {
+    font-size: smaller;
+    background: orange;
+    width: 0;
+}
+
+.big{
+    font-size: 25px;
+}

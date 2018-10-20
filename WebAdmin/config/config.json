@@ -1,0 +1,20 @@
+{
+  "environment":"development",
+  "port":4096,
+  "emailConfig":{
+       "host": "smtp.gmail.com",
+       "port": 465,
+       "secure": true,
+       "auth": {
+              "user": "coderangers06@gmail.com",
+              "pass": "qwe123rty456"
+     }
+   }
+}
+
+
+
+
+
+
+

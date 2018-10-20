@@ -1,0 +1,339 @@
+a {
+    color: #BA0707;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #BA0707;
+}
+html, body, .fullheight {
+    min-height: 100vh !important;
+    height: 100vh;
+}
+.fullheight {
+    
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+    font-size: 12px;
+}
+
+.full {
+    background-color: #e5e5e5;
+}
+
+.panelBox {
+    height: 100%;
+}
+
+.blueColor {
+    background-color: #151922;
+}
+
+.greenColor {
+    background-color: #00a875;
+}
+.redColor{
+    background-color: #E94448;
+}
+.blueTwoColor{
+    background-color: #152540;
+}
+
+/*.right-pannel {
+    background-color: #152540;
+    border-radius: 0px 8px 8px 0;
+}
+
+.right-pannel1 {
+    background-color: #00a875;
+    border-radius: 0px 8px 8px 0;
+    height: 100%;
+    float: right;
+}
+
+.left-panel {
+    background-color: #E94448;
+    position: absolute;
+    height: 790px;
+    border-radius: 8px 0 0 8px;
+}*/
+
+.container-fluid {
+    height: auto;
+    width: 100%;
+}
+
+/*.left-panel1 {
+    background-color: #151922;
+    height: 100%;
+    position: absolute;
+    float: left;
+    border-radius: 8px 0 0 8px;
+}*/
+.contMargin{
+    margin-top: 100px;
+}
+
+.w3-container label {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+}
+
+.w3-container p {
+    margin-bottom: 30px;
+}
+
+.button {
+    background-color: #E94448;
+    border: none;
+    color: white;
+    border-radius: 22px;
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none!important;
+    display: inline-block;
+    font-size: 14px;
+    margin: 12px 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: #fff;
+}
+
+.button-sin {
+    background-color: #29287d;
+    border-radius: 22px 0 0 22px;
+    border: none;
+    color: white;
+    float: right;
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none!important;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 0px;
+    cursor: pointer;
+}
+
+.button-log {
+    background-color: #E94448;
+    border: none;
+    color: white;
+    float: right;
+    border-radius: 22px;
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none!important;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 0px;
+    cursor: pointer;
+}
+
+.agree {
+    color: #D4D5CB;
+    font-size: 12px;
+}
+
+.logsin {
+    margin: 10px;
+}
+.logsin li {
+    list-style-type: none;
+    display: inline;
+}
+
+.log-head {
+    color: #fff;
+    font-size: 25px;
+}
+
+.log-btn-client {
+    margin-left: -38px;
+}
+
+.log-btn-client li {
+    list-style-type: none;
+    display: inline;
+}
+
+.button-client-log {
+    background-color: #fff;
+    border: none;
+    color: #00a875;
+    border-radius: 22px;
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none!important;
+    display: inline-block;
+    font-size: 14px;
+    margin: 12px 0px;
+    cursor: pointer;
+}
+
+.button-client-forgot {
+    background-color: #00a875;
+    border: none;
+    color: #fff;
+    border-radius: 22px;
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none!important;
+    display: inline-block;
+    font-size: 14px;
+    margin: 12px 0px;
+    cursor: pointer;
+}
+
+.client-intro {
+    margin-top: 100px;
+    padding: 10.00em 10px 0 10px;
+    color: #fff;
+}
+
+.client-intro p {
+    color: #3c4147;
+}
+
+.button-client-register {
+    background-color: #00a875;
+    border: none;
+    color: #fff;
+    border-radius: 22px;
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none!important;
+    display: inline-block;
+    font-size: 14px;
+    margin: 12px 0px;
+    cursor: pointer;
+}
+
+.client-headbar {
+    background-color: #000;
+    height: 50px;
+}
+
+.head-secondpart {
+    background-color: #fff;
+}
+
+.acnt-button {
+    float: right;
+    padding: 14px 0 16px 0;
+}
+
+.button-client-cont {
+    background-color: #00a875;
+    border: none;
+    color: #fff;
+    border-radius: 22px;
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none!important;
+    display: inline-block;
+    font-size: 14px;
+    margin: 175px 36px;
+    cursor: pointer;
+}
+
+.basic-info {
+    background-color: #fff;
+    max-width: 850px;
+    margin-top: 15px;
+    box-shadow: 10px 10px 5px #888888;
+    border-radius: 8px;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    border-radius: 25px;
+    padding: 8px 10px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+
+/*tabs css*/
+
+
+/* Style the tab */
+
+div.tab {
+    float: left;
+    background-color: #2d2b2b;
+    width: 25%;
+}
+
+
+/* Style the buttons inside the tab */
+
+div.tab button {
+    display: block;
+    background-color: inherit;
+    color: #a0a4a5;
+    padding: 12px 42px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+
+/* Create an active/current "tab button" class */
+
+div.tab button.active {
+    color: #2fb2f9;
+}
+
+
+/* Style the tab content */
+
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    width: 75%;
+    border-left: none;
+}
+
+.tab h2 {
+    font-size: 18px;
+    padding: 10px 0px 10px 66px;
+    color: #fff;
+    font-family: OpenSans-BoldItalic;
+}
+
+
+/*----formax-width500px----*/
+
+@media only screen and (max-width: 500px) {
+    .left-panel1 {
+        display: none;
+    }
+    .left-panel {
+        display: none;
+    }
+}

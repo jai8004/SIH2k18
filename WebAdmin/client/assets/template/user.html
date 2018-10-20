@@ -1,0 +1,61 @@
+<style>
+    th {
+
+        background-color: #9c27b0;
+        color: aliceblue;
+
+    }
+
+    tr:hover {
+
+        background-color: #9c27b0;
+        color: aliceblue;
+
+    }
+
+</style>
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-md-12" style=" font-size: 30px; color: black; ">USERS<input style=" padding: 10px; width: 32%; float: right;" type="text" placeholder=" Search Here..." ng-model="test"></div>
+
+
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card-body table-full-width table-responsive">
+                <table class="table table-hover">
+
+                    <th>NAME</th>
+                    <th>EMAIL</th>
+                    <th>ADHAAR</th>
+
+
+
+                    <tbody>
+                        <tr ng-repeat="x in users | filter:test">
+                            <td>{{x.name}}</td>
+                            <td>{{x.email}}</td>
+                            <td>{{x.adhaar_no}}</td>
+                        </tr>
+
+
+                    </tbody>
+
+
+
+                </table>
+
+
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,139 @@
+<div class="wrapper">
+
+    <div class="sidebar" data-color="purple" data-image="assets/img/sidebar-1.jpg">
+        <!--
+		        Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
+
+		        Tip 2: you can also add an image using data-image tag
+		    -->
+
+        <div class="logo">
+            <a class="simple-text">
+					File-Status
+				</a>
+        </div>
+
+        <div class="sidebar-wrapper">
+            <ul class="nav">
+                <li class="active">
+                    <a ui-sref="data">
+                        <i class="material-icons">dashboard</i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="profile">
+                        <i class="material-icons">person</i>
+                        <p>Profile</p>
+                    </a>
+                </li>
+                
+                <li>
+                    <a ui-sref="users">
+                        <i class="material-icons">location_on</i>
+                        <p>Users</p>
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="staffs">
+                        <i class="material-icons">chrome_reader_mode</i>
+                        <p>staffs</p>
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="files">
+                        <i class="material-icons">insert_photo</i>
+                        <p>files</p>
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="complaints">
+                        <i class="material-icons">announcement</i>
+                        <p>complaints</p>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-panel">
+        <nav class="navbar navbar-transparent navbar-absolute">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+                    <a class="navbar-brand">{{clientData.name}}</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        
+                        <li>
+                            <a ui-sref="data" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="material-icons">dashboard</i>
+                                <p class="hidden-lg hidden-md">Dashboard</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a ui-sref="profile" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="material-icons">person</i>
+                                <p class="hidden-lg hidden-md">Profile</p>
+                            </a>
+                        </li>
+                        
+                        <li class="sideBarContent">
+                            <a ui-sref="users" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="material-icons">location_on</i>
+                                <p>users</p>
+                            </a>
+                        </li>
+                        <li class="sideBarContent">
+                            <a ui-sref="staffs" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="material-icons">chrome_reader_mode</i>
+                                <p>staffs</p>
+                            </a>
+                        </li>
+                        <li class="sideBarContent">
+                            <a ui-sref="files" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="material-icons">insert_photo</i>
+                                <p>files</p>
+                            </a>
+                        </li>
+                        <li class="sideBarContent">
+                            <a ui-sref="complaints" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="material-icons">announcement</i>
+                                <p>complaints</p>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a ng-click="logout()" data-toggle="dropdown">
+                                <i class="material-icons">exit_to_app</i>
+                                <p class="hidden-lg hidden-md" >Logout</p>
+                            </a>
+                        </li>
+                    </ul>
+
+                   
+                </div>
+            </div>
+        </nav>
+
+        <div class="content">
+            <ui-view></ui-view>
+        </div>
+
+        <footer class="footer">
+            <div class="container-fluid">
+                
+                <p class="copyright pull-right">
+                    &copy; <a >File Status</a>, made with <i class="material-icons">favorite</i> for a better File Tracking
+                </p>
+            </div>
+        </footer>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+            <style>
+    th {
+
+        background-color: #9c27b0;
+        color: aliceblue;
+
+    }
+
+    tr:hover {
+
+        background-color: #9c27b0;
+        color: aliceblue;
+
+    }
+
+	
+	</style>
+    <div class="container-fluid">
+     <div style="margin: 0px 20px;">
+   <div class="row">
+    <div class="col" style=" font-size: 30px; color: black; ">COMPLAINTS <input  style=" padding: 10px; width: 32%; float: right;" type="text"  placeholder=" Search Here..." ng-model="test" ></div>
+    
+    
+</div>
+
+        <div class="row">
+ <div class="col-md-12" style="padding: 0px;">
+ <div class="card-body table-full-width table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <th>EMAIL</th>
+                        <th>DESCRIPTION</th>
+                        <th>FILE ID</th>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="x in complaints | filter:test">
+
+                            <td>{{x.userEmail}}</td>
+                            <td>{{x.description}}</td>
+                            <td>{{x.fileId}}</td>
+                            
+
+
+                    </tbody>
+                </table>
+
+        </div>
+    </div>
+</div>
+</div>
+</div>

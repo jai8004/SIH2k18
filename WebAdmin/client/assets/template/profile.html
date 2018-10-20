@@ -1,0 +1,65 @@
+<div class="content">
+	            <div class="container-fluid">
+	                <div class="row">
+	                    <div class="col-md-8">
+	                        <div class="card">
+	                            <div class="card-header" data-background-color="purple">
+	                                <h4 class="title">Profile</h4>
+									<p class="category">Complete your profile</p>
+	                            </div>
+	                            <div class="card-content">
+	                                <form ng-submit="updateProfile()">
+	                                    <div class="row">
+	                                        <div class="col-md-12">
+												<div class="form-group label-floating">
+													<label class="control-label">Name</label>
+													<input type="text" ng-model="clientProfile.name" class="form-control" >
+												</div>
+	                                        </div>
+	                                    </div>
+	                                    <div class="row">
+	                                        <div class="col-md-12">
+												<div class="form-group label-floating">
+													<label class="control-label">Email address</label>
+													<input type="email" ng-model="clientProfile.email" class="form-control" >
+												</div>
+	                                        </div>
+	                                    </div>
+	                                    <div class="row">
+	                                        <div class="col-md-12">
+												<div class="form-group label-floating">
+													<label class="control-label">Phone</label>
+													<input type="tel" ng-model="clientProfile.phone" class="form-control">
+												</div>
+	                                        </div>
+	                                    </div>
+
+	                                    
+
+	                                    <button type="submit" class="btn btn-primary pull-right">Update Profile</button>
+	                                    <div class="clearfix"></div>
+	                                </form>
+	                            </div>
+	                        </div>
+	                    </div>
+						<div class="col-md-4">
+    						<div class="card card-profile">
+    							<div class="card-avatar">
+    								<a>
+    									<img class="img" src="assets/img/marc.png" />
+    								</a>
+    							</div>
+
+    							<div class="content">
+    								<h6 class="category text-gray">{{clientProfile.name}}</h6>
+    								<h6 class="card-title">{{clientProfile.email}}</h6>
+    								<p class="card-content">
+    									Mobile Number : {{clientProfile.phone}}
+    								</p>
+    								
+    							</div>
+    						</div>
+		    			</div>
+	                </div>
+	            </div>
+	        </div>

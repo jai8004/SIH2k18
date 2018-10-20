@@ -1,0 +1,1 @@
+{"_id":{"$oid":"5abf1d9d691a277d388dd71f"},"name":"tanish","email":"pg211298@gmail.com","adhaar_no":"123456789012","password":"$2a$10$krDYFulAx5WKIV6FUpddJuH3ew4BtvWSBeFzqO6xlTY4va.WTNRcC","updateCode":"HRIXS5","is_status":false,"is_delete":false,"created_at":{"$date":"2018-03-31T05:33:17.096Z"},"updated_at":{"$date":"2018-03-31T05:33:17.096Z"},"__v":0}

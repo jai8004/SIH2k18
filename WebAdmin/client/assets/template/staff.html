@@ -1,0 +1,95 @@
+<style>
+    th {
+
+        background-color: #9c27b0;
+        color: aliceblue;
+
+    }
+
+    tr:hover {
+
+        background-color: #9c27b0;
+        color: aliceblue;
+
+    }
+
+</style>
+
+  
+       
+
+
+<div class="container-fluid">
+   <div style="margin: 0px 20px;">
+ 
+
+    <div class="row">
+       
+        <div class="col-md-4" style=" font-size: 30px; color: black; ">
+            STAFF</div>
+              
+               <div class="col-md-4" style=" font-size: 30px; color: black; "> <button data-toggle="modal" data-target="#flipFlop" style="  margin: 10px;" class="btn btn-success">
+				<strong> <a ui-sref="staffAdd"><i style="font-size: 25px;" class="fa fa-user-plus"></i> Add Staff</a></strong>
+                </button></div>
+
+
+	
+          
+           <div class="col-md-4" style=" font-size: 30px; color: black; "><input style=" padding: 10px;  float: right;" type="text" placeholder=" Search Here..." ng-model="test">
+        </div>
+        
+        
+        
+
+    </div>
+    <div class="row">
+        <div class="col-md-12" style="padding: 0px;">
+            <div class="card-body table-full-width table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Department ID</th>
+                        <th>Department Location</th>
+                        <th>Department Name</th>
+                        <th>Aadhaar Number</th>
+                        <th>Password</th>
+                        <th>Actions</th>
+                        
+
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="x in staffs  | filter:test">
+
+                            <td>{{x.name}}</td>
+                            <td>{{x.email}}</td>
+                            <td>{{x.dept_id}}</td>
+                            <td>{{x.dept_loc}}</td>
+                            <td>{{x.dept_name}}</td>
+                            <td>{{x.adhaar}}</td>
+                            <td>{{x.password}}</td>
+                            
+
+                            <td>
+
+                                <center>
+
+                                    <button ng-click="deleteStaff(x._id)" style=" float: left;" class="btn btn-danger">Delete</button>
+
+                                    <button ng-click="blockStaff(x._id)" style="float: left; background-color: black; border-color:black;" class="btn btn-primary">Block</button>
+
+                                </center>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+
+
+            </div>
+        </div>
+
+
+    </div>
+</div>

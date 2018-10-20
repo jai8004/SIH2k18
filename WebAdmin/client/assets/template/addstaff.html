@@ -1,0 +1,42 @@
+  <form name="form" >
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input ng-model="x.name" type="text" class="form-control" required>
+  </div>
+  
+   <div class="form-group">
+    <label for="number">Adhaar No.</label>
+    <input name="input" ng-maxlength="12" ng-minlength="12" ng-model="x.adhaar"  type="number" class="form-control" id="adhaar" required>
+    
+    <p style="color: red;" ng-if="!form.input.$valid">*Aadhar Number Must Be Of 12 Digits</p>
+  </div>
+ <div class="form-group">
+    <label for="department">Department Id</label>
+    <input ng-model="x.dept_id" type="text" class="form-control" id="Departmentid"required>
+  </div>
+   <div class="form-group">
+    <label for="location">Department Location</label>
+    <input ng-model="x.dept_loc" type="text" class="form-control" required>
+  </div>
+   <div class="form-group">
+    <label for="department">Department</label>
+    <input ng-model="x.dept_name" type="text" class="form-control" id="Department"required>
+  </div>
+ 
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input ng-model="x.email" type="email" class="form-control" id="email" required>
+  </div>
+  <div class="form-group">
+    <label for="email">Password</label>
+    <input ng-model="x.password" type="password" class="form-control" id="Designation" required>
+  </div>
+  
+  
+
+  
+  <button onClick="alert(staff added sucesfully)" type="submit"  class="btn btn-success">Submit</button>
+  
+  <p>{{entersuccess}}</p>
+  
+</form>
